@@ -5,10 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./output.css">
   <title>Davide</title>
+<!-- CookieConsent (GDPR compliant) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
+<script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    palette: {
+      popup: {
+        background: "#000"
+      },
+      button: {
+        background: "#f1d600"
+      }
+    },
+    theme: "classic",
+    position: "bottom-right",
+    type: "opt-in",
+    content: {
+      message: "Questo sito utilizza cookie tecnici e, con il tuo consenso, anche di terze parti per migliorare l’esperienza.",
+      dismiss: "Rifiuta",
+      allow: "Accetta",
+      link: "Leggi di più",
+      href: "/cookie-policy.html"  <!-- <-- Cambia questo con il tuo link alla cookie policy -->
+    }
+  })
+});
+</script>
+
 </head>
+
 <body class="bg-stone-50 bg-opacity-90 font-sans flex items-start justify-center text-stone-900">
   <div class="max-w-4xl mx-auto px-4 py-8">
-    <nav class="flex items-center justify-start mb-16 text-lg">
+    <nav class="z-50 sticky top-0 flex items-center justify-start mb-16 text-lg">
         <div class="flex space-x-4"></div>
         <a class="text-sm mr-6 hover:text-orange-500 transition ease-linear text-stone-500" href="./index.html">Home</a>
         <a class="text-sm mr-6 hover:text-orange-500 transition ease-linear text-stone-500" href="./projects.html">Projects</a>
@@ -22,6 +52,7 @@
         running helps me stay sharp. always learning. always moving forward.
         </p>
   </header>
+
   <section class="mb-16 gridcols">
       <h1 class="font-extrabold text-2xl mb-8 "><span class="text-orange-500">*</span> projects</h1>
     <a class="flex flex-col mb-8 hover:text-orange-500 transition ease-linear"href="https://github.com/ddavidefornelli/unicef">
