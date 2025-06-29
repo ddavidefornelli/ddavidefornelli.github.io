@@ -4,36 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./output.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <title>Davide</title>
-<!-- CookieConsent (GDPR compliant) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-
-<script>
-window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    palette: {
-      popup: {
-        background: "#000"
-      },
-      button: {
-        background: "#f1d600"
-      }
-    },
-    theme: "classic",
-    position: "bottom-right",
-    type: "opt-in",
-    content: {
-      message: "Questo sito utilizza cookie tecnici e, con il tuo consenso, anche di terze parti per migliorare l’esperienza.",
-      dismiss: "Rifiuta",
-      allow: "Accetta",
-      link: "Leggi di più",
-      href: "/cookie-policy.html"  <!-- <-- Cambia questo con il tuo link alla cookie policy -->
-    }
-  })
-});
-</script>
-
 </head>
 
 <body class="bg-stone-50 bg-opacity-90 font-sans flex items-start justify-center text-stone-900">
@@ -42,16 +14,28 @@ window.addEventListener("load", function(){
         <div class="flex space-x-4"></div>
         <a class="text-sm mr-6 hover:text-orange-500 transition ease-linear text-stone-500" href="./index.html">Home</a>
         <a class="text-sm mr-6 hover:text-orange-500 transition ease-linear text-stone-500" href="./projects.html">Projects</a>
-        <a class="text-sm mr-6 hover:text-orange-500 transition ease-linear text-stone-500" href="./blog.html">Blog</a>
     </nav>
   <header>
-      <h1 class="font-bold text-4xl mb-4">davide fornelli</h1>
+      <h1 id="title" class="font-bold text-4xl mb-4">davide fornelli</h1>
         <h3 class="text-md text-stone-500 mb-4">🤌🏼 bari, italia</h3>
         <p class="mb-16 leading-relaxed text-lg">
-        i'm a 20 y/o CS undergrad. i love building things that matter and figuring things out.
-        running helps me stay sharp. always learning. always moving forward.
+        I'm a 20 y/o CS undergrad. I'm an aspiring fullstack developer.
+        <br>In my spare time I run.
         </p>
   </header>
+
+  <section class="mb-16">
+      <h1 class="font-extrabold text-2xl mb-8 "><span class="text-orange-500">*</span> work experience</h1>
+      <div class="hover:text-orange-500">
+      <h2 class="text-xl not-hover:text-stone-900 font-semibold textfont-bold mb-0.2 transition ease-linear"> error 404 no work experience found</h2>
+      <h4 class="text-stone-500 mb-0.5 text-sm ">(??/?? - ??/??)</h4>
+      <div class="flex justify-between">
+      <h3 class="text-stone-900 text-base">---</h3>
+      </div>
+      </div>
+
+
+  </section>
 
   <section class="mb-16 gridcols">
       <h1 class="font-extrabold text-2xl mb-8 "><span class="text-orange-500">*</span> projects</h1>
@@ -69,34 +53,9 @@ window.addEventListener("load", function(){
       <h3 class="text-stone-900 text-base">my first project ever, a simple tris game, nothing more</h3>
       </div>
     </a>
-    <a class="text-orange-500 font-semibold"href="./projects.html">→ all projects</a>
+    <a class="text-orange-500 font-semibold not-hover:text-stone-900 transition ease-linear"href="./projects.html">[all projects]</a>
   </section>
-
-
-  <section class="mb-16">
-    <h1 class="font-extrabold text-2xl mb-8"><span class="text-orange-500">*</span> blog</h1>
-    <a class="flex flex-col mb-6 hover:text-orange-500 transition ease-linear"href="">
-      <div class="flex justify-between">
-        <h3 class="not-hover:text-stone-900 text-base">sweet home alabama</h3>
-        <h4 class="text-sm text-stone-500">19/29/89</h4>
-      </div>
-    </a>
-    <a class="flex flex-col mb-6 hover:text-orange-500 transition ease-linear"href="">
-      <div class="flex justify-between">
-        <h3 class="not-hover:text-stone-900 text-base">sweet home alabama</h3>
-        <h4 class="text-sm text-stone-500">19/29/89</h4>
-      </div>
-    </a>
-    <a class="flex flex-col mb-6 hover:text-orange-500 transition ease-linear"href="">
-      <div class="flex justify-between">
-        <h3 class="not-hover:text-stone-900 text-base">sweet home alabama</h3>
-        <h4 class="text-sm text-stone-500">19/29/89</h4>
-      </div>
-    </a>
-    <a class="text-orange-500 font-semibold"href="">→ all articles</a>
-  </section>
-
-  <section class="mb-16 ">
+   <section class="mb-16 ">
       <h1 class="font-extrabold text-2xl mb-8"><span class="text-orange-500">*</span> links</h1>
       <div class="flex">
         <a class="hover:text-orange-500 transition ease-linear text-stone-500 mr-6" href="https://x.com/fornelli_davide">x</a>
@@ -108,4 +67,5 @@ window.addEventListener("load", function(){
   </main>
   </div>
 </body>
+<script  src="./main.js"></script>
 </html>

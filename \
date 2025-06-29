@@ -18,9 +18,7 @@
         <a class="text-sm mr-6 hover:text-orange-500 transition ease-linear text-orange-500" href="./projects.html">Projects</a>
     </nav>
   <header>
-      <div class="flex">
-      <span class="text-orange-500 font-bold text-4xl mb-4 mr-3">* </span><h1 id="projects" class="font-bold text-4xl mb-4">projects</h1>
-      </div>
+      <span class="text-orange-500">*</span><h1 id="projects" class="font-bold text-4xl mb-4">projects</h1>
       <p class="mb-16 leading-relaxed text-stone-700 text-lg">
       this is a collection of my projects. Nothing more
         </p>

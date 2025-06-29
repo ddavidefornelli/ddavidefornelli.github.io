@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.10",
+    "animejs": "^4.0.2",
     "tailwindcss": "^4.1.10"
   }
 }
