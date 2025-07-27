@@ -57,6 +57,7 @@ class TextScramble {
 document.addEventListener('DOMContentLoaded', function() {
   const $title = document.querySelector('#title');
   const $projects = document.querySelector('#projects')
+  const $bookshelf = document.querySelector('#bookshelf')
   
   if ($title) {
     const fx = new TextScramble($title);
@@ -70,6 +71,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     setTimeout(() => {
       fx.setText('projects');
+    }, 250);
+  }
+
+  if ($bookshelf) {
+    const fx = new TextScramble($bookshelf);
+    
+    setTimeout(() => {
+      fx.setText('bookshelf');
     }, 250);
   }
 })
